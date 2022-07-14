@@ -5,6 +5,7 @@ $primaryColor: #fc4501;
 
   .membersSelectionContainer {
     padding: 144px 32px 0px;
+    padding-bottom: 20px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1.2fr 1fr;
@@ -18,7 +19,7 @@ $primaryColor: #fc4501;
         line-height: 108%;
         margin: 0px 0px 32px;
       }
-      p {
+      .subText {
         margin: 0px 0px 32px;
       }
     }
@@ -72,5 +73,20 @@ $primaryColor: #fc4501;
         }
       }
     }
+  }
+}
+
+.viewMoreButton {
+  border: none;
+  background: none;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 1.7rem;
+  border-bottom: 2px solid $primaryColor;
+  padding-bottom: 7px;
+  color: #fc4501;
+  &:hover {
+    color: black;
+    border-bottom: 2px solid black;
   }
 }

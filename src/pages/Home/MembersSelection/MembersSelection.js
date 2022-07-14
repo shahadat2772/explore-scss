@@ -1,4 +1,8 @@
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowLeftLong,
+  faArrowRightLong,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./MembersSelection.scss";
@@ -18,7 +22,7 @@ const MembersSelection = () => {
           <h1>
             A peek into <br /> Scandinavia's origin
           </h1>
-          <p>
+          <p className="subText">
             Scandinavia and Scandinavian entered usage in the late 18th century,
             being introduced by the early linguistic and cultural Scandinavist
             movement.
@@ -32,6 +36,11 @@ const MembersSelection = () => {
               <span>by</span>
               <p>Diego Balmaceda</p>
             </div>
+          </div>
+          <div>
+            <button className="viewMoreButton">
+              View More <FontAwesomeIcon icon={faArrowRightLong} />
+            </button>
           </div>
         </div>
         {/* IMG */}
