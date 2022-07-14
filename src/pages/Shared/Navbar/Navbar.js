@@ -5,6 +5,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
+  const navbar = document.querySelector(".navbarContainer");
+  window.onscroll = () => {
+    if (window.scrollY > 0) {
+      navbar.classList.add("nav-active");
+    } else {
+      navbar.classList.remove("nav-active");
+    }
+  };
+
   return (
     <div className="navbarContainer">
       <nav className="navbar">
