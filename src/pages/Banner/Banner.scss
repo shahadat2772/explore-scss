@@ -1,0 +1,17 @@
+.bannerImg {
+  background-image: url("./../../img/banner/joseph-barrientos-eUMEWE-7Ewg-unsplash.jpg");
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  .bannerContent {
+    width: 1280px;
+    margin: 0px auto;
+    padding: 0px 2rem;
+    color: white;
+    h2 {
+      font-size: 60px;
+    }
+  }
+}

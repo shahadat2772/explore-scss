@@ -1,0 +1,61 @@
+$primaryColor: #fc4501;
+
+@mixin centerByFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbarContainer {
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0);
+  width: 100vw;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 34.5px;
+  padding: 32px;
+
+  a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+
+  .navBrand {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .navItems {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    li {
+      padding: 0px 20px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .subscribeButton {
+      background-color: $primaryColor;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 0.75rem;
+      font-size: 16px;
+      font-weight: 500;
+      color: white;
+
+      &:hover {
+        color: $primaryColor;
+        background-color: black;
+      }
+    }
+  }
+}
