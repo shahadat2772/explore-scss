@@ -1,3 +1,5 @@
+$primaryColor: #fc4501;
+
 .bannerImg {
   background-image: url("./../../img/banner/joseph-barrientos-eUMEWE-7Ewg-unsplash.jpg");
   height: 100vh;
@@ -10,8 +12,22 @@
     margin: 0px auto;
     padding: 0px 2rem;
     color: white;
+
+    .tagIcon {
+      display: inline-block;
+      margin-right: 15px;
+      color: $primaryColor;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
     h2 {
       font-size: 60px;
+      margin: 21px 0px;
+      line-height: 105%;
     }
   }
 }
