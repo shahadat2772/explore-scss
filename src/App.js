@@ -1,13 +1,13 @@
 import "./App.scss";
 import { Routes } from "react-router-dom";
-import Navbar from "./pages/Navbar/Navbar";
-import Banner from "./pages/Banner/Banner";
+import Navbar from "./pages/Shared/Navbar/Navbar";
+import Home from "./pages/Home/Home/Home";
 
 function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
-      <Banner></Banner>
+      <Home></Home>
     </div>
   );
 }
